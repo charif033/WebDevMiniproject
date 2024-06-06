@@ -1,0 +1,34 @@
+:root {
+    --red: rgb(100, 0, 0);
+    --gray: rgb(40, 40, 40, 0.9);
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+/* navigation bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray);
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    border: 2px solid transparent;
+    padding: 10px 40px;
+    color: rgb(185, 185, 185);
+    transition: all .3s ease-in-out;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    color: white;
+}

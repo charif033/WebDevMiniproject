@@ -1,0 +1,150 @@
+body {
+    background-image: url(pic/bg1.jpg);
+    backdrop-filter: blur(2px);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.firstrow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.firstcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin: 0 50px;
+    padding: 50px;
+    color: black;
+}
+
+.firstcolumn img {
+    width: 38px;
+    margin: 5px;
+    border-radius: 50%;
+    transition: all .1s ease-in-out;
+}
+
+.firstcolumn img:hover {
+    filter: drop-shadow(0 0 3px white);
+    outline: 2px solid var(--red);
+    outline-offset: 2px;
+}
+
+.firstcolumn h1,
+.firstcolumn h2 {
+    margin: 0;
+}
+
+.firstcolumn h1 {
+    font-size: 52px;
+}
+
+.firstcolumn p {
+    margin: 40px 0;
+    color: red;
+}
+
+.secondcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0 50px;
+    padding: 50px;
+}
+
+.secondcolumn img {
+    width: 280px;
+    border-radius: 170px;
+    border: 30px solid var(--gray);
+    border-bottom: 30px solid var(--red);
+}
+
+.navinpage {
+    position: sticky;
+    top: 0;
+    margin: 0 50px;
+}
+
+.navinpage ul {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 0;
+}
+
+.navinpage ul li a {
+    padding: 10px 50px;
+    color: white;
+    text-decoration: none;
+    background-color: var(--gray);
+    transition: all .1s ease-in-out;
+}
+
+.navinpage a:hover {
+    color: red;
+}
+
+.secondrow {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#education,
+#skill,
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toppic {
+    margin: 50px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid gray;
+    border-radius: 5px;
+}
+
+.timelineitem {
+    display: flex;
+    flex-direction: row;
+}
+
+.timelineitem .content {
+    margin: 10px 0 10px 100px;
+    padding: 15px;
+    font-weight: bold;
+    background-color: lightgrey;
+    border-radius: 15px;
+}
+
+.timelineitem .year {
+    padding: 10px 0 0 10px;
+    font-weight: bold;
+    color: var(--red);
+}
+
+.skillgroup {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skillgroup img {
+    height: 60px;
+    margin: 30px;
+}
